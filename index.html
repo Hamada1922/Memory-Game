@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="لعية تختبر ذاكرتك كما تمتع عقلك">
+    <meta name="keywords" content="ذاكرة, حيوانات, لعبة, صور">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="start-screen">
+        <span>
+            أبدأ اللعب
+        </span>
+    </div>
+    <div class="lose-screen">
+        <p></p>
+    </div>
+    <!--  -->
+    <div class="info-bar">
+        <div class="name">
+            اسم اللاعب :
+            <span></span>
+        </div>
+        <div class="timer">
+            الوقت :
+            <span id="seconds">00</span> : <span id="minutes">01</span>
+        </div>
+        <div class="tries">
+            المحاولات الخاطئة :
+            <span>0</span>
+        </div>
+    </div>
+    <!-- -->
+    <div class="blocks">
+        <div class="block" data-animal="dog">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/dogs.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="dog">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/dogs.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="squirrel">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/squirrel.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="squirrel">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/squirrel.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="lion">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/lion.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="lion">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/lion.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="elephant">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/elephant.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="elephant">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/elephant.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="tiger">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/tiger.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="tiger">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/tiger.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="rabbit">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/rabbit.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="rabbit">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/rabbit.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="fox">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/fox.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="fox">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/fox.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="buffalo">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/buffalo.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="buffalo">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/buffalo.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="monkey">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/monkey.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="monkey">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/monkey.jpg" alt="">
+            </div>
+        </div>
+        <!--  -->
+        <div class="block" data-animal="deer">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/deer.jpg" alt="">
+            </div>
+        </div>
+        <div class="block" data-animal="deer">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="/images/deer.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="leader-board">
+        <div class="head">
+            <h2>لوح النتائج</h2>
+            <span>محو السجل</span>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>الرقم</th>
+                    <th>الاسم</th>
+                    <th>الاخطاء</th>
+                    <th>النتيجة</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        Updated By <span>Hamada Yasser</span> In 2022
+    </footer>
+    <audio id="success" src="/audio/success sound.wav"></audio>
+    <audio id="fail" src="/audio/fail.wav"></audio>
+    <script src="main.js"></script>
+</body>
+
+</html>
