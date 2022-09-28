@@ -104,6 +104,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: red;
 }
 
 .blocks.no-clicking {
@@ -122,8 +123,8 @@ body {
 
 @media(max-width: 767px) {
     .blocks .block {
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
         margin: 2px;
     }
 }
