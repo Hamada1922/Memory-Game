@@ -122,8 +122,8 @@ body {
 
 @media(max-width: 767px) {
     .blocks .block {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         margin: 2px;
     }
 }
@@ -136,7 +136,7 @@ body {
 
 @media(max-width: 767px) {
     .blocks .block .front {
-        line-height: 70px;
+        line-height: 60px;
     }
 }
 
@@ -149,7 +149,7 @@ body {
 
 @media(max-width: 767px) {
     .blocks .block .front::before {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
