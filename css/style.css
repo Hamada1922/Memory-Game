@@ -136,7 +136,7 @@ body {
 
 @media(max-width: 767px) {
     .blocks .block .front {
-        line-height: 80px;
+        line-height: 50px;
     }
 }
 
