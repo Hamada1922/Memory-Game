@@ -72,14 +72,13 @@ body {
 }
 
 .info-bar {
-    width: 1080px;
-    max-width: 80%;
-    margin: 20px auto;
+    width: 80%;
+    margin: 20px auto 0;
     font-size: 20px;
     font-weight: bold;
     border: 3px solid var(--main-color);
     background-color: #f6f6f6;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,12 +99,11 @@ body {
 }
 
 .blocks {
-    width: 1100px;
-    margin: 20px auto;
+    width: 80%;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 100%;
 }
 
 .blocks.no-clicking {
@@ -113,9 +111,9 @@ body {
 }
 
 .blocks .block {
-    height: 200px;
-    width: 200px;
-    margin: 10px;
+    height: 160px;
+    width: 160px;
+    margin: 7px;
     transform-style: preserve-3d;
     transition: transform 0.5s;
     cursor: pointer;
@@ -132,7 +130,7 @@ body {
 
 .blocks .block .front {
     background-color: var(--main-bg);
-    line-height: 200px;
+    line-height: 160px;
     /* to place before in the middel */
 }
 
@@ -144,7 +142,7 @@ body {
 
 .blocks .block .front::before {
     content: "!";
-    font-size: 140px;
+    font-size: 110px;
     font-weight: bold;
     color: #fff;
 }
@@ -182,8 +180,7 @@ body {
 
 /* Special Classes */
 .block.flipped,
-.block.match,
-.flipped {
+.block.match {
     transform: rotateY(180deg);
     pointer-events: none;
 }
@@ -267,7 +264,7 @@ footer {
     text-align: center;
     font-weight: bold;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 18px;
     border-width: 5px;
     border-style: solid;
     border-color: var(--main-color) transparent;
@@ -284,39 +281,3 @@ footer {
 footer span {
     color: var(--main-color);
 }
-
-/* test */
-
-.test {
-    transform-style: preserve-3d;
-    position: relative;
-    transition: 1s;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
-}
-
-.test .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.test .front {
-    background-color: #333;
-}
-
-.test .back {
-    transform: rotateY(180deg);
-    background-color: red;
-}
-
-.test img {
-    max-width: 100%;
-}
-
-/* 
-.test:hover {
-    transform: rotateY(180deg);
-} */

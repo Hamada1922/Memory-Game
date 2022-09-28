@@ -169,10 +169,3 @@ document.querySelector(".head span").onclick = () => {
     resultBoard.splice(0);
     showData();
 }
-
-// .test
-let test = document.querySelector(".test");
-console.log(test)
-test.onclick = () => {
-    test.classList.add("flipped");
-}
